@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copa Renault</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}"> 
+</head>
+<body>
+
+   <nav class="navbar">
+    <div id="navbar">
+        <a href="/inicio" class="navbar-button">Inicio</a>
+        <a href="/informacion" class="navbar-button">Informacion</a>
+    </div>
+   </nav>
+
+    <div class="container">
+        <h1 class="Title">Bienvenido a la Copa Renault</h1>
+        <h3 class="Desc">Bienvenido al evento intercolegial más grande de Córdoba, donde se reúnen más de 100 colegios y compiten para ver cuál tiene el mejor equipo de fútbol, básquet y vóley!</h3>
+        <img src="{{ url_for('static', filename='images/Copa.jpg') }}" class="main-image">
+        <h3 class="Desc">Te invitamos a entrar en la pestaña "Informacion", donde podrás ver todos los resultados de los partidos, los horarios de cada uno, el mapa del colegio, y los precios de la cantina.</h3>
+        <div> <h1>‎</h1> </div>
+    </div>
+
+    <nav class="bottom-navbar">
+        <div id="bottom-navbar">
+            <a href="https://www.instagram.com" class="navbar-button">Instagram</a>
+            <a href="https://www.facebook.com" class="navbar-button">Facebook</a>
+            <a href="https://www.twitter.com" class="navbar-button">Twitter</a>
+        </div>
+       </nav>
+
+</body>
+</html>

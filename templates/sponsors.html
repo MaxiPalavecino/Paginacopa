@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sponsors</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}"> 
+</head>
+<body>
+
+   <nav class="navbar">
+    <div id="navbar">
+        <a href="/inicio" class="navbar-button">Inicio</a>
+        <a href="/ingresado" class="navbar-button">Volver</a>
+    </div>
+   </nav>
+
+   <div class="container">
+    <h1>Aquí encontrarás todos los sponsors del evento</h1>
+
+        <div class="recuadro2">
+            <div class="card">
+                <h1>Arcor</h1>
+                <img src="{{ url_for('static', filename='images/arcor.png') }}" class="sponsorimg">
+            </div>
+            <div class="card">
+                <h1>Bancor</h1>
+                <img src="{{ url_for('static', filename='images/bancor.png') }}" class="sponsorimg">
+            </div>
+            <div class="card">
+                <h1>Cadena 3</h1>
+                <img src="{{ url_for('static', filename='images/cadena3.png') }}" class="sponsorimg">
+            </div>
+            <div class="card">
+                <h1>CocaCola</h1>
+                <img src="{{ url_for('static', filename='images/cocacola.png') }}" class="sponsorimg">
+            </div>
+            <div class="card">
+                <h1>Grido</h1>
+                <img src="{{ url_for('static', filename='images/grido.png') }}" class="sponsorimg">
+            </div>
+            <div class="card">
+                <h1>Nike</h1>
+                <img src="{{ url_for('static', filename='images/nike.jpg') }}" class="sponsorimg">
+            </div>
+            <div class="card">
+                <h1>Personal</h1>
+                <img src="{{ url_for('static', filename='images/personal.jpg') }}" class="sponsorimg">
+            </div>
+            <div class="card">
+                <h1>Sect. Ambiente</h1>
+                <img src="{{ url_for('static', filename='images/Secretariaambiente.jpg') }}" class="sponsorimg">
+            </div>
+            <div class="card">
+                <h1>UNC</h1>
+                <img src="{{ url_for('static', filename='images/unc.png') }}" class="sponsorimg">
+            </div>
+            <div class="card">
+                <h1>Vitnik</h1>
+                <img src="{{ url_for('static', filename='images/vitnik.png') }}" class="sponsorimg">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

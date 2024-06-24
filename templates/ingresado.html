@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}"> 
+</head>
+<body>
+
+   <nav class="navbar">
+    <div id="navbar">
+        <a href="/sponsors" class="navbar-button">Sponsors</a>
+        <a href="/deportes" class="navbar-button">Deportes</a>
+        <a href="/calendario" class="navbar-button">Calendario</a>
+        <a href="/precios" class="navbar-button">Precios</a>
+    </div>
+   </nav>
+
+   <div class="container">
+    <h1>Aquí podrás encontrar toda la información que necesitas para el evento</h1>
+    <p>Para mejor visualización ver en computadora</p>
+    <div class="recuadro">
+        <div class="sponsors">
+            <h2>Sponsors</h2>
+            <div class="sponsors-item">
+                <img src="{{ url_for('static', filename='images/Secretariaambiente.jpg') }}" class="image">
+                <p>Secretaría de ambiente de Córdoba</p>
+            </div>
+            <div> <h3>‎</h3> </div>
+            <div class="sponsors-item">
+                <img src="{{ url_for('static', filename='images/grido.png') }}" class="image">
+                <p>Helados Grido</p>
+            </div>
+        </div>
+
+        <div class="segundo-rec">
+            <div class="calendar">
+                <div> 
+                    <h2>Fechas importantes</h2> 
+                    <p>1 de abril: Apertura de inscripciones.</p>
+                    <p>28 de abril: Último día para inscribirse a los partidos.</p>
+                    <h3>10 de mayo: Copa renault!</h3>
+                    <p>15 de mayo: Finaliza el sorteo.</p>
+                    <p>16 de mayo: Premiación del sorteo!!!</p>
+                </div>
+            </div>
+
+            <div class="matches">
+                <div> 
+                    <h2>Partidos más cercanos</h2> 
+                    <p>9:45: Primer partido de fútbol.</p>
+                    <p>9:45: Primer partido de basket.</p>
+                    <p>9:45: Primer partido de voley.</p>
+                    <p>10:15: Segundo partido de voley.</p>
+                    <p>10:30: Segundo partido de basket.</p>
+                    <p>11:15: Segundo partido de fútbol.</p>
+                </div>
+            </div>
+
+            <div class="mas-info"> 
+                <div onclick="window.location.href='/inicio'" class="masinfo">Ir a inicio</div>
+            </div>
+            
+</div>
+</body>
+</html>
