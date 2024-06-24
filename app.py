@@ -30,5 +30,9 @@ def calendario():
 def precios():
     return render_template('precios.html')
 
+@app.route('/galeria')
+def galeria():
+    return render_template('galeria.html')
+
 if __name__ == '__main__':
     app.run(debug=True,  port=3500) 
